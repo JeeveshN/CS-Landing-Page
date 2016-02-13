@@ -1,58 +1,83 @@
 
-<!DOCTYPE html>
-<html lang="en">
-	<head><link rel="icon" 
-      type="image/png" 
-      href="images/logo.jpg">
 
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	
-<meta charset="utf-8">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Collegespace</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-		
-<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-<link href="css/styles.css" rel="stylesheet">
-	</head>
-
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>3D Rotating Navigation | CodyHouse</title>
+</head>
 <body>
-
-
-<div class="container"></div><div class="navbar navbar-inverse ">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-<a class="navbar-brand" href="#"><img src="images/logo.jpg" style="height:30px; width:30px; padding:2px;"/>   Collegespace</a>
-    </div class="navhover">
-    <div class="collapse navbar-collapse">
-         
-        <div> <ul class="nav navbar-nav navbar-right">
-         <li class="active" ><a href="#">Home</a></li>
-        <li><a href="#about">Faculty</a></li>
-        <li><a href="#contact">students Corner</a></li>
-        <li><a href="#contact">Notices</a></li>
-        <li><a href="#contact">Cs Team</a></li>
-           
-      </ul></div>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<div class="cd-header navbar-fixed-top" >
+		<a href="#0" class="cd-logo"><img src="img/logo.jpg" style="height:70px; width:70px;" alt="Logo"></a>
+		<a href="#0" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</div>
+ <!-- .cd-header -->
 	
-<script src="js/bootstrap.min.js"></script>
+	<main>
+<!--sliding images--><h1 id="top"> Rolling images</h1>
 
+<!--glimpses and events-->
+<div class="glimpses" id=""><hr/><h1>events</h1></div>
+
+<!--sliding images-->
+<div class="notices" id="notices"><hr/><h1>notices</h1></div>
+
+<div class="studentscorner" id="studentscorner"><hr/><h1><br/><br/>students corner</h1></div>
+<!--sliding images-->
+
+<!--sliding images-->
+<div class="faculty" id="faculty"><hr/><h1>faculty</h1></div>
+
+
+<!--CSteam-->
+<div class="CSteam" id="CSteam"><hr/><h1>CS team</h1></div>
+
+		<!-- all your content here -->
+	</main>
+	
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li class="cd-selected">
+				<a href="#top" class="smoothScroll">Home</a>
+			</li>
+
+			<li>
+				<a href="#studentscorner" class="smoothScroll">Students Corner</a>
+			</li>
+
+			<li>
+				<a href="#faculty" class="smoothScroll">Faculty</a>
+			</li>
+
+			<li>
+				<a href="#notices" class="smoothScroll">Notices</a>
+			</li>
+
+			<li>
+				<a href="#CSteam" class="smoothScroll">CS Team</a>
+			</li>
+		</ul> <!-- .cd-3d-nav -->
+
+		<span class="cd-marker color-1"></span>	
+	</nav> <!-- .cd-3d-nav-container -->
 
 </body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+
 </html>
