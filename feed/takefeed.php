@@ -49,11 +49,11 @@
 $words=explode("/",$url);
 $category=$words[3];
 if($category=='notices')
-return '<img src="img/1_important-notice-md.png" alt="notices" >'.'</img>';
+return '<img src="feed/img/1_important-notice-md.png" alt="notices" >'.'</img>';
 if($category=='results')
-return '<img src="img/result.png" alt="result" >'.'</img>';
+return '<img src="feed/img/result.png" alt="result" >'.'</img>';
 if($category=='datesheets')
-return '<img src="img/datesheets.jpg" alt="datesheet" >'.'</img>';
+return '<img src="feed/img/datesheets.jpg" alt="datesheet" >'.'</img>';
   }
   
 }
