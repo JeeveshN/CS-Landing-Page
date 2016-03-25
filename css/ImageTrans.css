@@ -95,7 +95,7 @@
 
 .jumb{
 	width: 100%;
-	height: 800px;
+	height: 100vh;
 }
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation { 
