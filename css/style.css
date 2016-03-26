@@ -55,18 +55,29 @@ Main Components
   width: 250px;
   height: 150px;
 }
-.Student-corner a {
+.Student-corner{
+  position: relative;
+}
+
+.Student-corner .row .col-md-4{
+  height: 250px;
+}
+.Student-corner .NSITpedia  a {
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: none; 
+}
+.Student-corner .Updates  a {
   font-family: 'Varela Round', sans-serif;
   text-decoration: none; 
 }
 
 .NSITpedia {
-  margin-left: -200px;
-  padding-right: 300px;
+  margin-top:50%;
+
 }
 .Updates {
-  margin-right: -200px;
-  padding-left: 150px; 
+
+  margin-top: 50%; 
 }
 footer{
   bottom: 0;
